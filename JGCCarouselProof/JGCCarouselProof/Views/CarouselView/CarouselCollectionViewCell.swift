@@ -1,8 +1,8 @@
 //
 //  CarouselCollectionViewCell.swift
-//  MisConsultas
+//  JGCCarouselProof
 //
-//  Created by Javier Garcia Castro on 11/4/17.
+//  Created by Javier Garcia Castro on 23/9/17.
 //  Copyright © 2017 Javier Garcia Castro. All rights reserved.
 //
 

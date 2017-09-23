@@ -19,8 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+
+        indexSelected = 4
         initialize()
     }
 
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         }
         
         carouselView = CarouselView.init(delegate: self, dataSource: self)
+        carouselView?.setBackgroundColor(color: .white)
         
         carouselContainerView.addSubview(carouselView!)
         UIView.embedView(view: carouselView!)
@@ -44,14 +45,14 @@ class ViewController: UIViewController {
     }
 
     func viewsForCarousel() {
-        
         elements = Array<UIView>()
-        
-        for i in 0..<20 {
-            
+        for i in 0..<10 {
             let numberView: NumberView = NumberView.loadNib()
             numberView.tag = i
             numberView.label.text = "\(i)"
+            numberView.label.textColor = UIColor.gray
+            
+            if i == indexSelected {  numberView.setForCurrentView() }
             
             elements.append(numberView)
         }
@@ -67,15 +68,19 @@ extension ViewController: CarouselViewDataSource, CarouselViewDelegate {
     }
     
     func sizeForViewForCarouselView(carouselView: CarouselView) -> CGSize {
-        return CGSize(width: 100.0, height: 60.0)
+        return CGSize(width: 80.0, height: 80.0)
     }
     
     func marginWidthForCarouselView(carouselView: CarouselView) -> CGFloat {
-        return 10.0
+        return 20.0
     }
     
     func navigateToIndexForCarouselView(carouselView: CarouselView) -> Int {
         return indexSelected
+    }
+    
+    func hasCollectionView(carouselView: CarouselView) -> Bool {
+        return true
     }
     
     // MARK: - CarouselViewDelegate
@@ -91,10 +96,10 @@ extension ViewController: CarouselViewDataSource, CarouselViewDelegate {
         indexSelected = index
     }
     
-    
     func layerEnableSideViews(carouselView: CarouselView) -> Bool {
-        return false
+        return true
     }
+    
 }
 
 

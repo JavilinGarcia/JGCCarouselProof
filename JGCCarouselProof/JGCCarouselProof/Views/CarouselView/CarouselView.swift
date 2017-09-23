@@ -1,8 +1,8 @@
 //
 //  CarouselView.swift
-//  MisConsultas
+//  JGCCarouselProof
 //
-//  Created by Javier Garcia Castro on 11/4/17.
+//  Created by Javier Garcia Castro on 23/9/17.
 //  Copyright © 2017 Javier Garcia Castro. All rights reserved.
 //
 
@@ -43,6 +43,7 @@ class CarouselView: UIView, UIScrollViewDelegate, UICollectionViewDataSource, UI
     @IBOutlet weak var widthScrollViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var centerXScrollViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var widthButtonsContainerConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerXCollectionViewConstraint: NSLayoutConstraint!
     
     var viewSize: CGSize?
     var pageWidth: CGFloat?
@@ -258,6 +259,11 @@ class CarouselView: UIView, UIScrollViewDelegate, UICollectionViewDataSource, UI
             
             self.widthCollectionViewConstraint.constant = CGFloat(self.views!.count * 20)
             
+            //Center collectionView according to number of views
+            self.centerXCollectionViewConstraint.constant = (self.views!.count % 2 != 0) ? centerXCollectionViewConstraint.constant + 10.0 : centerXCollectionViewConstraint.constant
+            
+            print("centerX \(centerXCollectionViewConstraint.constant)")
+            
             self.collectionView.delegate = self
             self.collectionView.dataSource = self
             
@@ -438,5 +444,4 @@ class CarouselView: UIView, UIScrollViewDelegate, UICollectionViewDataSource, UI
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: 10.0, height: 20.0)
     }
-    
 }

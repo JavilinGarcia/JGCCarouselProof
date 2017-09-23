@@ -13,20 +13,25 @@ class NumberView: UIView {
     @IBOutlet weak var label: UILabel!
     
     override func awakeFromNib() {
-        super.awakeFromNib()        
+        super.awakeFromNib()
+        
+        backgroundColor = UIColor.green.withAlphaComponent(0.5)
+        layer.cornerRadius = height/2
         layoutIfNeeded()
     }
     
     // MARK: Public Methods
 
     func setForCurrentView() {
-        label.textColor = UIColor.green.withAlphaComponent(0.8)
-        label.font = label.font.withSize(26.0)
+        label.textColor = .white
+        label.font = UIFont.init(name: label.font.fontName, size: 30.0)
+        backgroundColor = UIColor.blue.withAlphaComponent(0.5)
     }
     
     func setForNotCurrentView() {
         label.textColor = .gray
-        label.font = label.font.withSize(15.0)
+        label.font = UIFont.init(name: label.font.fontName, size: 15.0)
+        backgroundColor = UIColor.green.withAlphaComponent(0.5)
     }
     
     // MARK: Class Methods
