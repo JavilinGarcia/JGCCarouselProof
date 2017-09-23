@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarouselView" customModule="MisConsultas" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonsContainerView" destination="gkn-gd-Usf" id="DRP-sX-gTl"/>
+                <outlet property="centerXScrollViewConstraint" destination="g5s-zh-As8" id="mDc-S5-jh3"/>
+                <outlet property="collectionContainerView" destination="vLK-54-ZFn" id="GgL-pz-DN6"/>
+                <outlet property="collectionView" destination="AZT-4q-icP" id="nU9-AJ-Rsf"/>
+                <outlet property="heightScrollViewConstraint" destination="vfu-et-si2" id="msh-fs-MfC"/>
+                <outlet property="nextButton" destination="yyS-Tg-aNN" id="erG-vs-fK0"/>
+                <outlet property="previousButton" destination="pCH-JX-O0v" id="fcc-Rc-vsf"/>
+                <outlet property="scrollView" destination="Xog-xJ-hga" id="MU0-qd-AXq"/>
+                <outlet property="widthButtonsContainerConstraint" destination="05p-dP-lRq" id="7Vh-2F-Nlz"/>
+                <outlet property="widthCollectionViewConstraint" destination="rwA-M9-Pyr" id="a2G-UT-Qc4"/>
+                <outlet property="widthScrollViewConstraint" destination="bxO-11-Yun" id="rnP-xB-Nuc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="CarouselView" customModule="MisConsultas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xog-xJ-hga" userLabel="scrollView">
+                    <rect key="frame" x="37.5" y="253.5" width="300" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="bxO-11-Yun"/>
+                        <constraint firstAttribute="height" constant="160" id="vfu-et-si2"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="AQX-fg-TlK"/>
+                    </connections>
+                </scrollView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkn-gd-Usf" userLabel="buttonsContainerView">
+                    <rect key="frame" x="37.5" y="413.5" width="300" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCH-JX-O0v" userLabel="previousButton">
+                            <rect key="frame" x="8" y="5" width="137" height="30"/>
+                            <state key="normal" title="&lt;">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="userDidTapOnPreviousButton:" destination="-1" eventType="touchUpInside" id="9FR-wZ-kMU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyS-Tg-aNN" userLabel="nextButton">
+                            <rect key="frame" x="155" y="5" width="137" height="30"/>
+                            <state key="normal" title="&gt;">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="userDidTapOnNextButton:" destination="-1" eventType="touchUpInside" id="kV9-Ev-Lut"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="05p-dP-lRq"/>
+                        <constraint firstAttribute="centerY" secondItem="pCH-JX-O0v" secondAttribute="centerY" id="1gd-Ke-5FK"/>
+                        <constraint firstAttribute="trailing" secondItem="yyS-Tg-aNN" secondAttribute="trailing" constant="8" id="43s-aW-0v1"/>
+                        <constraint firstAttribute="centerY" secondItem="yyS-Tg-aNN" secondAttribute="centerY" id="FX2-Mp-T9t"/>
+                        <constraint firstAttribute="height" constant="40" id="OMJ-Xm-k87"/>
+                        <constraint firstItem="yyS-Tg-aNN" firstAttribute="leading" secondItem="pCH-JX-O0v" secondAttribute="trailing" constant="10" id="Okd-2H-N7R"/>
+                        <constraint firstItem="pCH-JX-O0v" firstAttribute="leading" secondItem="gkn-gd-Usf" secondAttribute="leading" constant="8" id="OpY-GW-jcp"/>
+                        <constraint firstItem="pCH-JX-O0v" firstAttribute="width" secondItem="yyS-Tg-aNN" secondAttribute="width" id="iPX-wJ-oPi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLK-54-ZFn">
+                    <rect key="frame" x="37.5" y="453.5" width="300" height="30"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AZT-4q-icP">
+                            <rect key="frame" x="20" y="0.0" width="300" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="rwA-M9-Pyr"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="33R-HB-JtO">
+                                <size key="itemSize" width="20" height="20"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="eDq-7Q-vl1"/>
+                                <outlet property="delegate" destination="-1" id="uQf-1H-Evp"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="43q-JC-D73"/>
+                        <constraint firstItem="AZT-4q-icP" firstAttribute="centerX" secondItem="vLK-54-ZFn" secondAttribute="centerX" constant="20" id="F6q-BK-8aA"/>
+                        <constraint firstAttribute="bottom" secondItem="AZT-4q-icP" secondAttribute="bottom" id="Gyn-XN-MX9"/>
+                        <constraint firstItem="AZT-4q-icP" firstAttribute="top" secondItem="vLK-54-ZFn" secondAttribute="top" id="wvX-BZ-cES"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.73527644230769229" green="0.73527644230769229" blue="0.73527644230769229" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Xog-xJ-hga" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LZA-VW-cXQ"/>
+                <constraint firstItem="Xog-xJ-hga" firstAttribute="centerX" secondItem="vLK-54-ZFn" secondAttribute="centerX" id="M5o-QU-Wla"/>
+                <constraint firstItem="gkn-gd-Usf" firstAttribute="trailing" secondItem="Xog-xJ-hga" secondAttribute="trailing" id="MtO-Ko-JJI"/>
+                <constraint firstItem="vLK-54-ZFn" firstAttribute="top" secondItem="gkn-gd-Usf" secondAttribute="bottom" id="Mxs-U7-Nm1"/>
+                <constraint firstItem="vLK-54-ZFn" firstAttribute="width" secondItem="Xog-xJ-hga" secondAttribute="width" id="Ohc-SD-FWB"/>
+                <constraint firstItem="vLK-54-ZFn" firstAttribute="top" secondItem="Xog-xJ-hga" secondAttribute="bottom" priority="250" id="cDh-J7-c7d"/>
+                <constraint firstItem="Xog-xJ-hga" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g5s-zh-As8"/>
+                <constraint firstItem="gkn-gd-Usf" firstAttribute="top" secondItem="Xog-xJ-hga" secondAttribute="bottom" id="k9a-va-tfy"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

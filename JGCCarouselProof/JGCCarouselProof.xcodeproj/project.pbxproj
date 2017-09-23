@@ -12,6 +12,14 @@
 		59AB844B1F76E4B9005A7E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AB84491F76E4B9005A7E3F /* Main.storyboard */; };
 		59AB844D1F76E4B9005A7E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AB844C1F76E4B9005A7E3F /* Assets.xcassets */; };
 		59AB84501F76E4B9005A7E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AB844E1F76E4B9005A7E3F /* LaunchScreen.storyboard */; };
+		59AB84601F76E5CE005A7E3F /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB84591F76E5CE005A7E3F /* CarouselCollectionViewCell.swift */; };
+		59AB84611F76E5CE005A7E3F /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AB845A1F76E5CE005A7E3F /* CarouselCollectionViewCell.xib */; };
+		59AB84621F76E5CE005A7E3F /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB845B1F76E5CE005A7E3F /* CarouselView.swift */; };
+		59AB84631F76E5CE005A7E3F /* CarouselView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AB845C1F76E5CE005A7E3F /* CarouselView.xib */; };
+		59AB84671F76EB55005A7E3F /* UIView+JGCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB84661F76EB55005A7E3F /* UIView+JGCExtension.swift */; };
+		59AB846C1F76EC58005A7E3F /* String+JGCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB846B1F76EC58005A7E3F /* String+JGCExtension.swift */; };
+		59AB846F1F76ED66005A7E3F /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB846D1F76ED66005A7E3F /* NumberView.swift */; };
+		59AB84701F76ED66005A7E3F /* NumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AB846E1F76ED66005A7E3F /* NumberView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		59AB844C1F76E4B9005A7E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59AB844F1F76E4B9005A7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59AB84511F76E4B9005A7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59AB84591F76E5CE005A7E3F /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		59AB845A1F76E5CE005A7E3F /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		59AB845B1F76E5CE005A7E3F /* CarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		59AB845C1F76E5CE005A7E3F /* CarouselView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselView.xib; sourceTree = "<group>"; };
+		59AB84661F76EB55005A7E3F /* UIView+JGCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+JGCExtension.swift"; sourceTree = "<group>"; };
+		59AB846B1F76EC58005A7E3F /* String+JGCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JGCExtension.swift"; sourceTree = "<group>"; };
+		59AB846D1F76ED66005A7E3F /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		59AB846E1F76ED66005A7E3F /* NumberView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,8 @@
 		59AB84441F76E4B9005A7E3F /* JGCCarouselProof */ = {
 			isa = PBXGroup;
 			children = (
+				59AB84681F76EBC4005A7E3F /* Extensions */,
+				59AB84571F76E5CE005A7E3F /* Views */,
 				59AB84451F76E4B9005A7E3F /* AppDelegate.swift */,
 				59AB84471F76E4B9005A7E3F /* ViewController.swift */,
 				59AB84491F76E4B9005A7E3F /* Main.storyboard */,
@@ -62,6 +80,44 @@
 				59AB84511F76E4B9005A7E3F /* Info.plist */,
 			);
 			path = JGCCarouselProof;
+			sourceTree = "<group>";
+		};
+		59AB84571F76E5CE005A7E3F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59AB84581F76E5CE005A7E3F /* CarouselView */,
+				59AB845D1F76E5CE005A7E3F /* DayView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59AB84581F76E5CE005A7E3F /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				59AB84591F76E5CE005A7E3F /* CarouselCollectionViewCell.swift */,
+				59AB845A1F76E5CE005A7E3F /* CarouselCollectionViewCell.xib */,
+				59AB845B1F76E5CE005A7E3F /* CarouselView.swift */,
+				59AB845C1F76E5CE005A7E3F /* CarouselView.xib */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		59AB845D1F76E5CE005A7E3F /* DayView */ = {
+			isa = PBXGroup;
+			children = (
+				59AB846D1F76ED66005A7E3F /* NumberView.swift */,
+				59AB846E1F76ED66005A7E3F /* NumberView.xib */,
+			);
+			path = DayView;
+			sourceTree = "<group>";
+		};
+		59AB84681F76EBC4005A7E3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				59AB84661F76EB55005A7E3F /* UIView+JGCExtension.swift */,
+				59AB846B1F76EC58005A7E3F /* String+JGCExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +179,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AB84611F76E5CE005A7E3F /* CarouselCollectionViewCell.xib in Resources */,
+				59AB84701F76ED66005A7E3F /* NumberView.xib in Resources */,
 				59AB84501F76E4B9005A7E3F /* LaunchScreen.storyboard in Resources */,
 				59AB844D1F76E4B9005A7E3F /* Assets.xcassets in Resources */,
 				59AB844B1F76E4B9005A7E3F /* Main.storyboard in Resources */,
+				59AB84631F76E5CE005A7E3F /* CarouselView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +196,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				59AB84481F76E4B9005A7E3F /* ViewController.swift in Sources */,
+				59AB84601F76E5CE005A7E3F /* CarouselCollectionViewCell.swift in Sources */,
+				59AB84621F76E5CE005A7E3F /* CarouselView.swift in Sources */,
+				59AB846C1F76EC58005A7E3F /* String+JGCExtension.swift in Sources */,
 				59AB84461F76E4B9005A7E3F /* AppDelegate.swift in Sources */,
+				59AB84671F76EB55005A7E3F /* UIView+JGCExtension.swift in Sources */,
+				59AB846F1F76ED66005A7E3F /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
