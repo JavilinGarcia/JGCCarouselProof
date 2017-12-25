@@ -11,7 +11,6 @@
 		59AB84481F76E4B9005A7E3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB84471F76E4B9005A7E3F /* ViewController.swift */; };
 		59AB844B1F76E4B9005A7E3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AB84491F76E4B9005A7E3F /* Main.storyboard */; };
 		59AB844D1F76E4B9005A7E3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59AB844C1F76E4B9005A7E3F /* Assets.xcassets */; };
-		59AB84501F76E4B9005A7E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59AB844E1F76E4B9005A7E3F /* LaunchScreen.storyboard */; };
 		59AB84601F76E5CE005A7E3F /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB84591F76E5CE005A7E3F /* CarouselCollectionViewCell.swift */; };
 		59AB84611F76E5CE005A7E3F /* CarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AB845A1F76E5CE005A7E3F /* CarouselCollectionViewCell.xib */; };
 		59AB84621F76E5CE005A7E3F /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB845B1F76E5CE005A7E3F /* CarouselView.swift */; };
@@ -20,6 +19,7 @@
 		59AB846C1F76EC58005A7E3F /* String+JGCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB846B1F76EC58005A7E3F /* String+JGCExtension.swift */; };
 		59AB846F1F76ED66005A7E3F /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AB846D1F76ED66005A7E3F /* NumberView.swift */; };
 		59AB84701F76ED66005A7E3F /* NumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AB846E1F76ED66005A7E3F /* NumberView.xib */; };
+		59F243EF1FF1A9DB003BF6E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F243ED1FF1A9DB003BF6E4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,6 @@
 		59AB84471F76E4B9005A7E3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59AB844A1F76E4B9005A7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59AB844C1F76E4B9005A7E3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		59AB844F1F76E4B9005A7E3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59AB84511F76E4B9005A7E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59AB84591F76E5CE005A7E3F /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		59AB845A1F76E5CE005A7E3F /* CarouselCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		59AB846B1F76EC58005A7E3F /* String+JGCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+JGCExtension.swift"; sourceTree = "<group>"; };
 		59AB846D1F76ED66005A7E3F /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
 		59AB846E1F76ED66005A7E3F /* NumberView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberView.xib; sourceTree = "<group>"; };
+		59F243EE1FF1A9DB003BF6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 				59AB84451F76E4B9005A7E3F /* AppDelegate.swift */,
 				59AB84471F76E4B9005A7E3F /* ViewController.swift */,
 				59AB84491F76E4B9005A7E3F /* Main.storyboard */,
+				59F243ED1FF1A9DB003BF6E4 /* LaunchScreen.storyboard */,
 				59AB844C1F76E4B9005A7E3F /* Assets.xcassets */,
-				59AB844E1F76E4B9005A7E3F /* LaunchScreen.storyboard */,
 				59AB84511F76E4B9005A7E3F /* Info.plist */,
 			);
 			path = JGCCarouselProof;
@@ -181,8 +181,8 @@
 			files = (
 				59AB84611F76E5CE005A7E3F /* CarouselCollectionViewCell.xib in Resources */,
 				59AB84701F76ED66005A7E3F /* NumberView.xib in Resources */,
-				59AB84501F76E4B9005A7E3F /* LaunchScreen.storyboard in Resources */,
 				59AB844D1F76E4B9005A7E3F /* Assets.xcassets in Resources */,
+				59F243EF1FF1A9DB003BF6E4 /* LaunchScreen.storyboard in Resources */,
 				59AB844B1F76E4B9005A7E3F /* Main.storyboard in Resources */,
 				59AB84631F76E5CE005A7E3F /* CarouselView.xib in Resources */,
 			);
@@ -216,10 +216,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		59AB844E1F76E4B9005A7E3F /* LaunchScreen.storyboard */ = {
+		59F243ED1FF1A9DB003BF6E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				59AB844F1F76E4B9005A7E3F /* Base */,
+				59F243EE1FF1A9DB003BF6E4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
